@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Esercizio Email e Dadi</title>
     <style media="screen">
 
       .titolo {
@@ -19,8 +19,9 @@
 
     <script type="text/javascript">
 
-    //EMAIL
-    var email = ['alessandro.venti@icloud.com', "lorenzo.antonelli@icloud.com", 'andrea.fazio@icloud.com', 'tiziana.baraldi@icloud.com', 'martino.scalvini@icloud.com', 'alessandro.dongu@icloud.com'];
+                                    //EMAIL
+
+    var email = ["alessandro.venti@icloud.com", "lorenzo.antonelli@icloud.com", "andrea.fazio@icloud.com", 'tiziana.baraldi@icloud.com', 'martino.scalvini@icloud.com', 'alessandro.dongu@icloud.com'];
     var request = prompt("Inserisci la tua email");
 
       for (let i = 0 ; i < email.length; i++) {
@@ -28,9 +29,26 @@
           console.log(`l'email" ${email[i]} è corretta!`);
           i = email.length;
 
-        } else if(i == email.length) {
+        } else if(i == (email.length - 1)) {
           console.log(`l'email non corrisponde ai nostri database!`);
         }
+      }
+
+                              //DADI
+
+      var player = Math.round(Math.random() * (6 - 1) + 1);
+      var computer = Math.round(Math.random() * (6 - 1) + 1);
+
+      console.log(player, computer);
+
+      if (player > computer) {
+        console.log(`Giocatore: ${player}, Computer: ${computer} . Giocatore vince!`);
+
+      } else if (player == computer) {
+        console.log(`Giocatore: ${player}, Computer: ${computer} . Pareggio!`);
+
+      } else {
+        console.log(`Giocatore: ${player}, Computer: ${computer} . Computer vince!`);
       }
 
     </script>
