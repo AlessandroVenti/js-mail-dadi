@@ -49,6 +49,35 @@
         console.log(`Giocatore: ${player}, Computer: ${computer} . Computer vince!`);
       }
 
+
+      //Variante con array
+
+      var numberArray = [1,2,3,4,5,6];
+      var player = 0;
+      var computer = 0;
+
+      for( let i = Math.round(Math.random() * (5 - 0) + 0); i > 0; ) {
+        player = i;
+        break;
+      }
+
+      for( let i = Math.round(Math.random() * (5 - 0) + 0); i > 0; ) {
+        computer = i;
+        break;
+      }
+
+      console.log(`MODALITA ARRAY ----> Giocatore: ${player}, Computer: ${computer}`);
+
+      if (player > computer) {
+        console.log(`MODALITA ARRAY ----> Giocatore: ${player}, Computer: ${computer} . Giocatore vince!`);
+
+      } else if (player == computer) {
+        console.log(`MODALITA ARRAY ----> Giocatore: ${player}, Computer: ${computer} . Pareggio!`);
+
+      } else {
+        console.log(`MODALITA ARRAY ----> Giocatore: ${player}, Computer: ${computer} . Computer vince!`);
+      }
+
     </script>
   </body>
 </html>
