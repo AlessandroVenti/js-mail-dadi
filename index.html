@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      .titolo {
+        text-align: center;
+        color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="titolo"> Ciao Mondo</h1>
+    <h1 class="titolo" id="lol"> Lorem Ipsum</h1>
+
+    <script type="text/javascript">
+
+    //EMAIL
+    var email = ['alessandro.venti@icloud.com', "lorenzo.antonelli@icloud.com", 'andrea.fazio@icloud.com', 'tiziana.baraldi@icloud.com', 'martino.scalvini@icloud.com', 'alessandro.dongu@icloud.com'];
+    var request = prompt("Inserisci la tua email");
+
+      for (let i = 0 ; i < email.length; i++) {
+        if (email[i] === request ) {
+          console.log(`l'email" ${email[i]} è corretta!`);
+          i = email.length;
+
+        } else if(i == email.length) {
+          console.log(`l'email non corrisponde ai nostri database!`);
+        }
+      }
+
+    </script>
+  </body>
+</html>
